@@ -13,7 +13,7 @@ This assigment is to discover a popular and versatile C function `printf()`. Thi
 ### `ft_printf`
 
 ```c
-  char  *get_next_line(int fd);
+  int	ft_printf(const char *input, ...);
 ```
 
 > **Parameters:** A string as mandatory first argument and a varying number of optional parameters, defined by the possible format specifiers.

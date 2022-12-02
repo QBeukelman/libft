@@ -1,4 +1,5 @@
 
+
 # 42_get_next_line
 
 This assigment is to write a function that returns a line read from a `file descriptor`. Repeated calls (e.g., using a loop) to your `get_next_line()` function should let you read the text file pointed to by the file descriptor, one line at a time. Your function should return the line that was read.
@@ -44,13 +45,7 @@ If there is nothing else to read or if an error occurred, it should return `NULL
 
 # Usage
 
-### Requirements
-
-The functions are written in C language and therefore require the `gcc` **compiler** and some **standard C libraries** to run.
-
-### Instructions
-
-#### 1. Create a main entry point
+### 1. Create a main entry point
 
 Add the following code to a `main.c` file, in the root directory:
 
@@ -89,6 +84,7 @@ int main(void)
 	return (0);
 }
 ```
+<br />
 
 
 ### 2. Use the function
@@ -98,6 +94,7 @@ Compile all C files to the executable `a.out`, set the `BUFFER_SIZE` and use `ca
 ```shell
   gcc -Wall -Werror -Wextra *.c && ./a.out -D BUFFER_SIZE=2 | cat -e
 ```
+<br />
 
 
 ### 3. Check for leaks
@@ -113,12 +110,4 @@ Run the program, to start the infinate loop. Open a new terminal and run the cod
 ```shell
   leaks a.out
 ```
-<br />
-
-
-# Testing
-
-You can use this third party tester to measure the capability of the library:
-
-- [Francinette](https://github.com/xicodomingues/francinette "Francinette")
 <br />

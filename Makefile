@@ -11,6 +11,7 @@ LIB_CHECK = ft_isalpha.c \
 
 LIB_CONVERT = ft_toupper.c \
 			ft_tolower.c \
+			ft_strtol.c \
 			ft_atoi.c \
 			ft_itoa.c \
 

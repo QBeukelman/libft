@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 10:01:20 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2022/12/02 12:27:06 by quentinbeuk   ########   odam.nl         */
+/*   Updated: 2023/03/18 10:44:38 by qbeukelm      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,10 +41,12 @@ int			ft_isdigit(int c);
 int			ft_isalnum(int c);
 int			ft_isascii(int i);
 int			ft_isprint(int c);
+int			ft_isspace(char c);
 
 // Convert
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+long int	ft_strtol(char *str);
 int			ft_atoi(const char *str);
 char		*ft_itoa(int n);
 

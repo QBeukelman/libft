@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 10:01:20 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2023/03/18 10:44:38 by qbeukelm      ########   odam.nl         */
+/*   Updated: 2024/12/11 14:57:53 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 8
+#  define BUFFER_SIZE 1024
 # endif
 
 # include <string.h>
@@ -58,6 +58,7 @@ void		*ft_memmove(void *dst, const void *src, size_t len);
 void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 void		*ft_calloc(size_t count, size_t size);
+void		*ft_realloc(void *ptr, size_t size);
 
 // String
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);

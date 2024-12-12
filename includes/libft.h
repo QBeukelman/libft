@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 10:01:20 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2024/12/11 14:57:53 by quentinbeuk   ########   odam.nl         */
+/*   Updated: 2024/12/11 22:05:31 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 # include <ctype.h>
 # include <fcntl.h>
 # include <stdarg.h>
+# include <stdbool.h>
 
 
 // -- LIBFT --
@@ -41,7 +42,7 @@ int			ft_isdigit(int c);
 int			ft_isalnum(int c);
 int			ft_isascii(int i);
 int			ft_isprint(int c);
-int			ft_isspace(char c);
+bool		ft_isspace(char c);
 
 // Convert
 int			ft_toupper(int c);

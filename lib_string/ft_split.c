@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/12 10:12:31 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2022/12/02 11:54:14 by quentinbeuk   ########   odam.nl         */
+/*   Updated: 2024/12/11 22:08:26 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,33 +23,18 @@
 // Return Value: The array of new strings resulting from the
 // split. NULL if the allocation fails.
 
-// https://www.youtube.com/watch?v=Vp6OELK4gmo
-
-int		count_substrings(char const *s, char c, int len, int count);
-char	**allocate_strings_buff(char const *s, char c, int len, char **strings);
-int		check_beginning(char const *s, char c, int i, int len);
-char	**allocate_strings(char **strings, char *buffer, int j, int *str_index);
-
-char	**ft_split(char const *s, char c)
+static int	check_beginning(char const *s, char c, int i, int len)
 {
-	int		len;
-	int		count;
-	char	**strings;
-
-	count = 0;
-	len = ft_strlen(s);
-	count = count_substrings(s, c, len, count);
-	strings = malloc(sizeof(char *) * (count + 1));
-	if (strings == NULL)
+	while (i < len)
 	{
-		free (strings);
-		return (NULL);
+		if (s[i] != c)
+			break ;
+		i++;
 	}
-	strings = allocate_strings_buff(s, c, len, strings);
-	return (strings);
+	return (i);
 }
 
-int	count_substrings(char const *s, char c, int len, int count)
+static int	count_substrings(char const *s, char c, int len, int count)
 {
 	int		i_check;
 	int		i;
@@ -70,6 +55,18 @@ int	count_substrings(char const *s, char c, int len, int count)
 			count++;
 	}
 	return (count);
+}
+
+static char	**allocate_strings(char **strings, char *buffer, int j, int *str_index)
+{
+	if (j > 0)
+	{
+		buffer[j] = '\0';
+		strings[*str_index] = malloc(sizeof(char) * (ft_strlen(buffer) + 1));
+		ft_strlcpy(strings[*str_index], buffer, (ft_strlen(buffer) + 1));
+		*str_index = *str_index + 1;
+	}
+	return (strings);
 }
 
 char	**allocate_strings_buff(char const *s, char c, int len, char **strings)
@@ -100,25 +97,21 @@ char	**allocate_strings_buff(char const *s, char c, int len, char **strings)
 	return (strings);
 }
 
-char	**allocate_strings(char **strings, char *buffer, int j, int *str_index)
+char	**ft_split(char const *s, char c)
 {
-	if (j > 0)
-	{
-		buffer[j] = '\0';
-		strings[*str_index] = malloc(sizeof(char) * (ft_strlen(buffer) + 1));
-		ft_strlcpy(strings[*str_index], buffer, (ft_strlen(buffer) + 1));
-		*str_index = *str_index + 1;
-	}
-	return (strings);
-}
+	int		len;
+	int		count;
+	char	**strings;
 
-int	check_beginning(char const *s, char c, int i, int len)
-{
-	while (i < len)
+	count = 0;
+	len = ft_strlen(s);
+	count = count_substrings(s, c, len, count);
+	strings = malloc(sizeof(char *) * (count + 1));
+	if (strings == NULL)
 	{
-		if (s[i] != c)
-			break ;
-		i++;
+		free (strings);
+		return (NULL);
 	}
-	return (i);
+	strings = allocate_strings_buff(s, c, len, strings);
+	return (strings);
 }

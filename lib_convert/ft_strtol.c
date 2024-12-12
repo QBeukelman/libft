@@ -6,7 +6,7 @@
 /*   By: quentinbeukelman <quentinbeukelman@stud      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/02 11:30:00 by quentinbeuk   #+#    #+#                 */
-/*   Updated: 2023/03/18 10:42:24 by qbeukelm      ########   odam.nl         */
+/*   Updated: 2024/12/11 22:04:56 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,14 +56,4 @@ long	int_add_sign(int sign, long int val)
 			val = LONG_MAX;
 	}
 	return (val);
-}
-
-int	ft_isspace(char c)
-{
-	return (c == ' '
-		|| c == '\t'
-		|| c == '\n'
-		|| c == '\r'
-		|| c == '\f'
-		|| c == '\v');
 }

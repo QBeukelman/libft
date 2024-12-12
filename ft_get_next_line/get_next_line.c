@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/01 08:58:08 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2022/12/02 12:27:01 by quentinbeuk   ########   odam.nl         */
+/*   Updated: 2024/12/11 23:33:26 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@
 // an error occured.
 
 /* Read from fd, up to the first buffer size including the new line character */
+
 char	*ft_read_and_save(int fd, char *line_saved)
 {
 	char	*buff;

@@ -10,11 +10,12 @@ LIB_CHECK = ft_isalpha.c \
 			ft_isprint.c \
 			ft_isspace.c \
 
-LIB_CONVERT = ft_toupper.c \
-			ft_tolower.c \
-			ft_strtol.c \
-			ft_atoi.c \
+LIB_CONVERT = ft_atoi.c \
 			ft_itoa.c \
+			ft_strtof.c \
+			ft_strtol.c \
+			ft_toupper.c \
+			ft_tolower.c \
 
 LIB_MEMORY = ft_memset.c \
 			ft_bzero.c \
@@ -25,7 +26,8 @@ LIB_MEMORY = ft_memset.c \
 			ft_calloc.c \
 			ft_realloc.c \
 
-LIB_STRING = ft_strlcpy.c \
+LIB_STRING = ft_count_char.c \
+			ft_strlcpy.c \
 			ft_strlcpy.c \
 			ft_strlcat.c \
 			ft_strchr.c \

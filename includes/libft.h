@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/20 10:01:20 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2024/12/11 22:05:31 by quentinbeuk   ########   odam.nl         */
+/*   Updated: 2024/12/26 00:17:26 by quentinbeuk   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,12 @@ int			ft_isprint(int c);
 bool		ft_isspace(char c);
 
 // Convert
-int			ft_toupper(int c);
-int			ft_tolower(int c);
-long int	ft_strtol(char *str);
 int			ft_atoi(const char *str);
 char		*ft_itoa(int n);
+float		ft_strtof(const char *str, char **endptr);
+long int	ft_strtol(char *str);
+int			ft_toupper(int c);
+int			ft_tolower(int c);
 
 // Memory
 void		*ft_memset(void *b, int c, size_t len);
@@ -62,6 +63,7 @@ void		*ft_calloc(size_t count, size_t size);
 void		*ft_realloc(void *ptr, size_t size);
 
 // String
+int			ft_count_char(char *str, char c);
 size_t		ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t		ft_strlcat(char *dst, const char *src, size_t dstsize);
 char		*ft_strchr(const char *s, int c);

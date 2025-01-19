@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   libft.h                                            :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/10/20 10:01:20 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2024/12/26 00:17:26 by quentinbeuk   ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/20 10:01:20 by qbeukelm          #+#    #+#             */
+/*   Updated: 2025/01/10 11:26:11 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,8 +112,8 @@ int		ft_print_dec(int number);
 
 // Pointers
 int		ft_print_p(unsigned long long p);
-void	ft_ptr_hex(uintptr_t number);
-int		ft_count_p(uintptr_t number);
+void	ft_ptr_hex(intptr_t number);
+int		ft_count_p(intptr_t number);
 
 // Unsigned
 int		ft_print_unsigned(unsigned int nbr);

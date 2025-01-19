@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_strdup.c                                        :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/10/12 10:05:38 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2022/12/02 11:54:21 by quentinbeuk   ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/12 10:05:38 by qbeukelm          #+#    #+#             */
+/*   Updated: 2025/01/19 12:49:53 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,12 @@
 char	*ft_strdup(const char *str)
 {
 	char	*p;
+	int		len;
 
-	p = malloc((ft_strlen(str) + 1) * sizeof(char));
+	len = ft_strlen(str) + 1;
+	p = malloc(len * sizeof(char));
 	if (p == NULL)
 		return (NULL);
-	ft_strlcpy(p, str, ft_strlen(str) + 1);
+	ft_strlcpy(p, str, len);
 	return (p);
 }

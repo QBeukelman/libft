@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_split.c                                         :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: qbeukelm <qbeukelm@student.codam.nl>         +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/10/12 10:12:31 by qbeukelm      #+#    #+#                 */
-/*   Updated: 2024/12/11 22:08:26 by quentinbeuk   ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/12 10:12:31 by qbeukelm          #+#    #+#             */
+/*   Updated: 2025/01/19 14:34:01 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,10 +108,7 @@ char	**ft_split(char const *s, char c)
 	count = count_substrings(s, c, len, count);
 	strings = malloc(sizeof(char *) * (count + 1));
 	if (strings == NULL)
-	{
-		free (strings);
 		return (NULL);
-	}
 	strings = allocate_strings_buff(s, c, len, strings);
 	return (strings);
 }

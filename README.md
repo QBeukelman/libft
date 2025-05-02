@@ -8,6 +8,12 @@ curriculum. The objective is to recreate a set of functions in the Standard C Li
 
 > For more information visit: [Codam.nl](https://www.codam.nl "Codam.nl") or [42 Cursus Subjects](https://github.com/Surfi89/42cursus/tree/main/Subject%20PDFs "42 Cursus Subjects")
 
+Link the static library to your own file:
+
+```bash
+gcc -Ilibft main.c libft.a -o main
+```
+
 <br />
 
 

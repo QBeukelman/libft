@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:01:20 by qbeukelm          #+#    #+#             */
-/*   Updated: 2025/05/07 11:39:07 by qbeukelm         ###   ########.fr       */
+/*   Updated: 2025/05/07 12:39:09 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@
 # include <fcntl.h>
 # include <stdarg.h>
 # include <stdbool.h>
+# include <stdint.h>
 
 // -- LIBFT --
 

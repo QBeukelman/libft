@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   ft_isspace.c                                       :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: quentinbeukelman <quentinbeukelman@stud      +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2024/12/11 22:02:47 by quentinbeuk   #+#    #+#                 */
-/*   Updated: 2024/12/11 22:05:24 by quentinbeuk   ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/11 22:02:47 by quentinbeuk       #+#    #+#             */
+/*   Updated: 2025/05/07 11:41:18 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 bool	ft_isspace(char c)
 {
-    if (c == ' '
+	if (c == ' '
 		|| c == '\t'
 		|| c == '\n'
 		|| c == '\r'
 		|| c == '\f'
 		|| c == '\v')
-        return (true);
-    return (false);
+		return (true);
+	return (false);
 }

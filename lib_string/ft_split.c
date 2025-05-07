@@ -6,7 +6,7 @@
 /*   By: qbeukelm <qbeukelm@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:12:31 by qbeukelm          #+#    #+#             */
-/*   Updated: 2025/01/19 14:34:01 by qbeukelm         ###   ########.fr       */
+/*   Updated: 2025/05/07 11:40:54 by qbeukelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,8 @@ static int	count_substrings(char const *s, char c, int len, int count)
 	return (count);
 }
 
-static char	**allocate_strings(char **strings, char *buffer, int j, int *str_index)
+static char	**allocate_strings(char **strings, char *buffer, int j, \
+	int *str_index)
 {
 	if (j > 0)
 	{

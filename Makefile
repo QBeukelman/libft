@@ -1,4 +1,5 @@
 
+CC = gcc
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror -fPIE
 
